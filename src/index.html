@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todolist</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header>
+    <section>
+      <!-- 头部标题 -->
+      <label for="listInput">ToDoList</label>
+      <!-- 头部输入框 -->
+      <input type="text" id="listInput" placeholder="添加ToDo">
+    </section>
+  </header>
+  <!-- 主要内容 -->
+  <div class="content">
+    <h2>正在进行<span id="todocount"></span></h2>
+    <!-- 正在进行 -->
+    <ol id="todo">
+    </ol>
+    <!-- 已经完成 -->
+    <h2>已经完成<span id="donecount"></span></h2>
+    <ol id="done">
+    </ol>
+  </div>
+  <!-- 清除部分 -->
+  <div id="clear">
+    <p>Copyright © 2020 todolist.cn <button id="clearbtn">clear</button></p>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
