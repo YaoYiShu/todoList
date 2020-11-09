@@ -6,6 +6,7 @@ git status
 
 3.添加文件
 git add 文件名
+git add * 添加全部
 
 4.添加版本号
 git commit -m '版本号(v1.0)'
@@ -17,4 +18,7 @@ git log
 git reset --hard HEAD^
 
 7.回到某个版本 8ce5ae787844b3a48f6a0994f3a372423f3b7b01
-git resset --hard id(前6位8ce5ae)
+git resset --hard id(前几位就行8ce5ae)
+
+8.查看操作记录
+git reflog
