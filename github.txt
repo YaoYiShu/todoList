@@ -22,3 +22,8 @@ git resset --hard id(前几位就行8ce5ae)
 
 8.查看操作记录
 git reflog
+
+9.在未git add * 之前，查看新添加的内容部分
+git diff
+
+
