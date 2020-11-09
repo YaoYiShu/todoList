@@ -35,5 +35,14 @@ git restore --staged 文件
 12.删除文件
 git rm 文件
 
+13.远程上传
+git push
+
+14.克隆项目
+git clone http://------
+
+15.继续推送更新的项目
+git pull
+
 
 
