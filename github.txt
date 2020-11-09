@@ -4,7 +4,7 @@ git init
 2.查看当前文件目录状态
 git status
 
-3.添加文件
+3.添加文件到暂存区
 git add 文件名
 git add * 添加全部
 
@@ -25,5 +25,11 @@ git reflog
 
 9.在未git add * 之前，查看新添加的内容部分
 git diff
+
+10.在未git add * 之前，执行撤销操作
+git restore 文件
+
+11.在git add * 添加到暂存区后，执行撤销操作
+git restore --staged 文件
 
 
