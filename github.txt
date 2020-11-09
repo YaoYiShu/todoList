@@ -32,4 +32,8 @@ git restore 文件
 11.在git add * 添加到暂存区后，执行撤销操作
 git restore --staged 文件
 
+12.删除文件
+git rm 文件
+
+
 
