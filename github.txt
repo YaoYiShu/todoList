@@ -1,0 +1,20 @@
+1.初始化本地仓库
+git init
+
+2.查看当前文件目录状态
+git status
+
+3.添加文件
+git add 文件名
+
+4.添加版本号
+git commit -m '版本号(v1.0)'
+
+5.查看日志记录
+git log
+
+6.回退版本（^代表上一个版本 ^^上上个版本）
+git reset --hard HEAD^
+
+7.回到某个版本 8ce5ae787844b3a48f6a0994f3a372423f3b7b01
+git resset --hard id(前6位8ce5ae)
