@@ -9,6 +9,7 @@ const donecount = document.querySelector("#donecount")
 const itemText = document.querySelector(".itemText")
 let todonum = 0;
 let donenum = 0;
+// 测试一下git
 let todoList = [];
 
 // clear 清楚数据
