@@ -44,5 +44,8 @@ git clone http://------
 15.继续推送更新的项目
 git pull
 
-
+出现错误：
+1.error: failed to push some refs to 'xxxx'
+原因：远程仓库有个文件Readme. md，但是本地仓库却没有，就可能会出现这种情况
+解决：git pull --rebase origin master
 
