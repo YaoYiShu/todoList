@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todoList_vue</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <!-- 头部 -->
+    <header>
+      <section>
+        <!-- 头部标题 -->
+        <label for="listInput">ToDoList</label>
+        <!-- 头部输入框 -->
+        <input type="text" id="listInput" placeholder="添加ToDo" v-model="inputValue" @keydown.enter="addList">
+      </section>
+    </header>
+    <!-- 主要内容 -->
+    <div class="content">
+      <h2>正在进行<span id="todocount">{{todocount}}</span></h2>
+      <!-- 正在进行 -->
+      <ol>
+        <li v-for="item,index in todoOl" :key="item.id">
+          <input type="checkbox" @click.prevent="checkDone(item.id)">
+          <input type="text" v-model="item.title">
+          <span class="del" @click="deleteItem(item.id)">-</span>
+        </li>
+
+      </ol>
+      <!-- 已经完成 -->
+      <h2>已经完成<span id="donecount">{{donecount}}</span></h2>
+      <ol>
+        <li v-for="item,index in doneOl" :key="item.id">
+          <input type="checkbox" @click.prevent="checkDone(item.id)" checked>
+          <input type="text" v-model="item.title" disabled>
+          <span class="del" @click="deleteItem(item.id)">-</span>
+        </li>
+      </ol>
+    </div>
+    <!-- 清除部分 -->
+    <div id="clear">
+      <p>Copyright © 2020 todolist.cn <button id="clearbtn" @click="clearAll">clear</button></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
