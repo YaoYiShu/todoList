@@ -1,2 +1,2 @@
 # todoList
-This is a js exercise project todoList (basic version)
+这是一个js练习项目todoList(基本版本)
